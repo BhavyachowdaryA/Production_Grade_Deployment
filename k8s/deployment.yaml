@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: shopeasy
-        image: bhavya/flask-shopeasy:BUILD_NUMBER
+        image: bhavyachowdary756/flask-shopeasy:BUILD_NUMBER
         ports:
         - containerPort: 5000
