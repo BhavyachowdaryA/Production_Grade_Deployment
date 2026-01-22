@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shopeasy-app
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: shopeasy
+  template:
+    metadata:
+      labels:
+        app: shopeasy
+    spec:
+      containers:
+      - name: shopeasy
+        image: bhavya/flask-shopeasy:BUILD_NUMBER
+        ports:
+        - containerPort: 5000
