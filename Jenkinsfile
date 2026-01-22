@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "bhavya/flask-shopeasy"
+        IMAGE_NAME = "bhavyachowdary756/flask-shopeasy"
         DOCKER_CREDS = "docker-creds"
         GIT_CREDS = "github-creds"
         MANIFEST_FILE = "k8s/deployment.yaml"
@@ -73,3 +73,4 @@ pipeline {
         }
     }
 }
+
